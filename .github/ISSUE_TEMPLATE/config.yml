@@ -1,0 +1,9 @@
+blank_issues_enabled: true
+
+contact_links:
+  - name: MtF.community
+    url: https://github.com/harmony-within-us/mtf-community/issues/new/choose
+    about: MtF.community
+  - name: Harmony Within Us
+    url: https://github.com/harmony-within-us
+    about: Harmony Within Us

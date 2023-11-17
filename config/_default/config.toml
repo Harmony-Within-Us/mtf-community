@@ -1,0 +1,44 @@
+baseURL = "https://mtf.community"
+title = "MtF.community"
+theme = "zdoc"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+hasCJKLanguage = false
+
+copyright = "&copy; 2023-{year} MtF.community by Harmony Within Us <a href='https://creativecommons.org/licenses/by-sa/4.0/' target='_blank'><img src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png' loading='lazy' alt='CC BY-SA 4.0'></a>"
+timeout = "1m"
+enableEmoji = true
+enableRobotsTXT = true
+paginate = 13
+rssLimit = 100
+disableKinds = ["taxonomy"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true
+      unsafe = true
+      xHTML = true
+  [markup.highlight]
+    codeFences = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = false
+    startLevel = 2
+
+[outputs]
+  home = ["HTML", "RSS", "SearchIndex"]
+
+[outputFormats]
+  [outputFormats.SearchIndex]
+    mediaType = "application/json"
+    baseName = "index"
+    isPlainText = true
+    notAlternative = true
+
+[taxonomies]
+  tag = "tags"
