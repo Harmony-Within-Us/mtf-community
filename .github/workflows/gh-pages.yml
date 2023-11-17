@@ -3,7 +3,7 @@ name: Publish Site
 on:
   push:
     branches:
-      - master
+      - main
     paths-ignore:
       - .github
       - README.md
